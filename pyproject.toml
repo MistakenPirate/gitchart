@@ -1,7 +1,7 @@
 [project]
 name = "gitchart"
 version = "0.1.0"
-description = "Add your description here"
+description = "GitHub contribution chart API : generate SVG contribution graphs with custom colors and date ranges"
 requires-python = ">=3.13"
 dependencies = [
     "beautifulsoup4>=4.14.3",
