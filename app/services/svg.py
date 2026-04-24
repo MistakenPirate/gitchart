@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from app.services.colors import DEFAULT_COLORS
 
 CELL_SIZE = 11
@@ -17,8 +19,6 @@ def generate_svg(contributions: list[dict], colors: list[str] = DEFAULT_COLORS) 
 
     weeks: list[list[dict | None]] = []
     current_week: list[dict | None] = []
-
-    from datetime import datetime
 
     first_date = datetime.strptime(contributions[0]["date"], "%Y-%m-%d")
     first_dow_sun = (first_date.weekday() + 1) % 7
